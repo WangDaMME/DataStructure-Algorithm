@@ -14,7 +14,7 @@
 <ol>
   <li> Bubble / Selection / Insertion
   <li> Quick  / Merge     / Heap 
-  <li> Shell  / Merge     / Heap 
+  <li> Shell  / Counting  /Bucket / Radix 
 
 </ol>
 
