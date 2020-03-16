@@ -16,7 +16,7 @@
   <li> Quick  / Merge     / Heap 
   <li> Shell  / Merge     / Heap 
 
-<ol>
+</ol>
 
 
 ### Data Structure
@@ -29,7 +29,7 @@
         <ul> Application - Maze Path Search
         <li> Stack - DFS completed but not optimized
         <li> Queue - DFS completed 
-          
+     </li>    
     <li> Linked List
    
 <ol>
