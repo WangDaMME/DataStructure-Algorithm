@@ -17,3 +17,18 @@
   <li> Shell  / Merge     / Heap 
 
 <ol>
+
+
+### Data Structure
+
+<ol>
+  <li> Linear
+    <li> List/ Array
+    <li> Stack - LIFO
+    <li> Queue - FIFO (cyclic structure) Deque
+        <ul> Application - Maze Path Search
+        <li> Stack - DFS completed but not optimized
+        <li> Queue - DFS completed 
+    <li> Linked List
+   
+<ol>
