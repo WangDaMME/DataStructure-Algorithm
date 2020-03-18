@@ -44,7 +44,7 @@ def Seek_Path(x1,y1,x2,y2): # (x1,y1)：起点 (x2,y2):终点
         break
     else:
       maze[next_node[0]][next_node[1]]=2  # 也要改为已访问过
-      stack.pop()
+      stack.pop() # 一个都找不到 回退
 
   else:
     print("No Path exists!")
