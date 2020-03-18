@@ -1,3 +1,5 @@
+# Refer to BinaryTree.png
+
 class BinaryTreeNode(object):
     def __init__(self,data,Lchild=None,Rchild=None):
         self.data=data
