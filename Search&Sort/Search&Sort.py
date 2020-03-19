@@ -223,7 +223,7 @@ def HeapSort(lst, low, high):
     n=len(lst)
     for i in range(n//2-1,-1,-1):  # 子节点 找父节点 （i-1）//2 末尾 是n-1
         # i 是 当前根的下标
-        sift(lst,i,n//2-1)         # high: 不管 i是几 都指整个堆的尾元素
+        sift(lst,i,n-1)         # high: 不管 i是几 都指整个堆的尾元素
                                    # [要点]： High 的作用是 比较 j 别超了high, 若超了high 就是最后一层,, 7的孩子 肯定不会 跑到 同级左孩子堆里， (这些都小些)
     #2. 得到堆顶元素,堆顶与最后一个元素交换
     for i in range(n-1,-1,-1):   # 让i指向当前堆的最后一个元素, 需要调整n-1次
