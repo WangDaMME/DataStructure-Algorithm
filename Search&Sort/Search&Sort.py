@@ -203,7 +203,7 @@ def sift(lst, low,high):
     i=low      # 从堆顶开始
     j=2*i+1    # i根节点下的左孩子节点
     while j<=high:
-        if j+1<=high and lst[j]<lst[j+1]:  # 有  右孩子节点  并且 右孩子比较大
+        if j+1<=high and lst[j]<lst[j+1]:  # 有  右孩子节点  并且 右孩子比较大  # j+1 要写前面 要不容易有index越界问题
             j=j+1
         if lst[j]>temp:
             lst[i]=lst[j]    # 把下面孩子节点 顶上来
