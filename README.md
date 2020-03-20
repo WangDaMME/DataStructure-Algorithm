@@ -23,16 +23,18 @@
 
 <ol>
 <li>Linear
+    <ol>  
     <li> List/ Array
     <li> Stack - LIFO
     <li> Queue - FIFO (cyclic structure) Deque
         <ul> Application - Maze Path Search
         <li> Stack - DFS completed but not optimized
         <li> Queue - DFS completed 
-     </li>    
-    <li> Linked List
+          
+        <li> Linked List
+     </ol>    
 
-</li>Linear
+</li>
  
 <li>Tree
     <li> Binary Tree
