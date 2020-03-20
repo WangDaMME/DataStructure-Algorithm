@@ -22,7 +22,7 @@
 ### Data Structure
 
 <ol>
-  <li> Linear
+<li>Linear
     <li> List/ Array
     <li> Stack - LIFO
     <li> Queue - FIFO (cyclic structure) Deque
@@ -31,5 +31,12 @@
         <li> Queue - DFS completed 
      </li>    
     <li> Linked List
+ 
+<li>Tree
+    <li> Binary Tree
+    <li> Binary Search Tree --- lchild.value < rchild.value
+    <li> AVL Tree --- lchild.value < rchild.value
+    
+
    
 <ol>
