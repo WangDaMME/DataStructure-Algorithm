@@ -60,6 +60,7 @@ class BSTree(object):
             else:  # 相等时，也是什么也不做
                 return  # 完成
 
+#------------------ Trasverse-------------------------------#
 
     def pre_Trasverse(self,root):
         if root:  #root 不为空
@@ -80,6 +81,36 @@ class BSTree(object):
            self.post_Trasverse(root.rchild)
            print(root.data,end=',')
 
+#------------------ Query-------------------------------#
+    def query_recursion(self,node,value):   # 必须要传node
+        if not node:  # node 为空
+            return None
+        if value<node.data:
+            self.query_recursion(node.lchild,value)
+        elif value>node.data:
+            self.query_recursion(node.rchild,value)
+        else:   # 等于， 直接返回
+            return node    # 返回 node
+
+    def query_no_recursion(self,value):
+        p=self.root
+        if not p:
+            return None  # P 为空
+        while p:   # p不为空
+            if value<p.data:
+                p=p.lchild
+            elif value>p.data:
+                p=p.rchild
+            else: #找到了
+                return p
+        else:
+            return None # 执行完 找不到
+                    
+
+
+
+
+
 import random
 lst=list(range(10))
 random.shuffle(lst)
@@ -91,3 +122,12 @@ print('')
 tree.middle_Trasverse(tree.root)  #--- Ordered 有序的 先小 --中---大
 print('')
 tree.post_Trasverse(tree.root)
+print('')
+print('==============')
+
+lst2=list(range(0,500,2))   # 全是 奇数的树
+random.shuffle(lst2)
+
+tree2=BSTree(lst2)
+print(tree2.query_no_recursion(4).data)
+print(tree2.query_no_recursion(3))
