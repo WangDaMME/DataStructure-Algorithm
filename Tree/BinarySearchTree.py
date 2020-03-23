@@ -20,7 +20,7 @@ class BSTree(object):
     # 插在哪个节点
     def insert_recursion(self,node,value):   #递归 需要每次调用自己的节点
         # 空树
-        if not node:
+        if not node:             # node=None 即 self.root=None
             node=BSTNode(value)  # 节点为空，创建 节点返回
         #树的左边  递归  把它插到左边
         elif value<node.data:  #传入的 < 该节点 node存的 node.data
