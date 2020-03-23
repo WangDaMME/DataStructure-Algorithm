@@ -21,11 +21,11 @@ class BSTree(object):
     def insert_recursion(self,node,value):   #递归 需要每次调用自己的节点
         # 空树
         if not node:             # node=None 即 self.root=None
-            node=BSTNode(value)  # 节点为空，创建 节点返回
+            node=BSTNode(value)  # 节点为空，创建 节点返回  #!!!
         #树的左边  递归  把它插到左边
         elif value<node.data:  #传入的 < 该节点 node存的 node.data
             self.insert_recursion(node.lchild,value)  #插到该几点左孩子
-            node.lchild.parent=node  # 把新插的父节点连上
+            node.lchild.parent=node  # 把新插的父节点连上  #!!!
         # 树的右边
         elif value>node.data:
             self.insert_recursion(node.rchild,value)
