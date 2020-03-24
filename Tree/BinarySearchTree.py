@@ -62,7 +62,7 @@ class BSTree(object):
 
 #------------------ Trasverse-------------------------------#
 
-    def pre_Trasverse(self,root):
+    def pre_Trasverse(self,root):   # 递归 要传入一个节点
         if root:  #root 不为空
            print(root.data,end=',')
            self.pre_Trasverse(root.lchild)
