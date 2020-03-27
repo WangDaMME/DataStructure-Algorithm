@@ -1,5 +1,5 @@
 ''' AVL Tree'''
-from BST import  BSTNode, BSTree
+from BinarySearchTree import  BSTNode, BSTree
 
 class AVLNode(BSTNode):     #继承BSTNode
     def __init__(self,data):
